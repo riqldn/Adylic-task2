@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Bembo;
+    src: url(./assets/BemboStd.woff2);
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.card{
+    width: 970px;
+    background-color: rgba(255, 254, 242, 0);
+    border: 0px solid black;
+    display: flex;
+}
+.img_wrapper{
+    height: 250px;
+    position: relative;
+    width: 734px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.card_img{
+    width: 734px;
+    height: 250px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.card_img:nth-of-type(1){
+    opacity: 1;
+    z-index: 4;
+    object-fit: cover;
+    background-image: url(./assets/lily.png);
+}
+.card_img:nth-of-type(2){
+    opacity: 0;
+    background-image: url(./assets/mens-scarf-and-briefcase.png);
+    z-index: 3;
+    object-fit: cover;
+}
+.card_img:nth-of-type(3){
+    z-index: 2;
+    opacity: 0;
+    object-fit: cover;
+    background-image: url(./assets/micro-bags.png);
+}
+.card_img:nth-of-type(4){
+ z-index: 1;
+ opacity: 0;
+ object-fit: cover;
+ object-position: 0px 0px;
+ background-image: url(./assets/products.png);
+}
+
+.card_titles{
+    font-family: Bembo;
+    font-weight: 100;
+    text-align: center;
+    height: 42px;
+    width: 106.5px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    
+}
+h2{
+    position: absolute;
+    font-family: BemboStd;
+  font-size: 23px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: 0.46px;
+  text-align: center;
+  color: #000;
+  width: 156.5px;
+  height: 52px;
+  margin: 0 52px 37px 52.5px;
+  background-color: rgb(253, 251, 237);
+}
+.card_title:nth-of-type(1){
+    opacity: 1;
+    z-index: 4;
+}
+.card_title:nth-of-type(2){
+    opacity: 0;
+    z-index: 3;
+}
+.card_title:nth-of-type(3){
+    opacity: 0;
+    z-index: 2;
+}
+.card_title:nth-of-type(4){
+    opacity: 0;
+    z-index: 1;
+}
+.cta{
+ justify-self:end;
+  cursor: pointer;
+  width: 87px;
+  height: 15px;
+  margin: 0 0 3.5px;
+  object-fit: contain;
+  font-family: Avenir;
+  font-size: 13px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.31;
+  letter-spacing: 1.3px;
+  text-align: center;
+  color: #000;
+}
+.card_text{
+    background-color: rgb(253, 251, 237);
+    height: 250px;
+    width: 236px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 79px;
+    gap: 80px;
+    border: 1px solid rgba(0, 0, 0, 0.548);
+}
+.btns{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+    margin-top: 10px;
+}
+.btn{
+    height: auto;
+    width: 7px;
+    cursor: pointer;
+}
+.logo{
+    width: 175.5px;
+    height: 55.5px;
+    z-index: 2000;
+    align-self: end;
+    justify-self: start;
+    margin:0 0 36px 45.5px;
+   transform: translateX(-277px);
+    
+}
+@media screen and (max-width: 768px){
+    .card{
+        width: 728px;
+        flex-direction: row;
+        background-color: rgba(255, 254, 242, 0);
+        border: 0px solid black;
+    }
+    .img_wrapper{
+        height: 90px;
+        position: relative;
+        width: 454px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .card_img{
+        width: 454px;
+        height: 90px;
+        position: absolute;
+    }
+    .card_img:nth-of-type(1){
+        opacity: 1;
+        z-index: 4;
+        background-position: cover;
+        background-image: url(./assets/lily-tablet.png);
+    }
+    .card_img:nth-of-type(2){
+        background-image: url(./assets/scarf-tablet.png);
+    }
+    .card_img:nth-of-type(3){
+        
+        background-image: url(./assets/micros-tablet.png);
+    }
+    .card_img:nth-of-type(4){
+     background-image: url(./assets/mini-alex-tablet.png);
+    }
+    .card_titles{
+        height: 52px;
+        width: 158.5px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        
+    }
+    h2{
+      position: absolute;
+      font-size:15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: #000;
+      width: 156.5px;
+      height: 13.5px;
+      margin: 0 52px 37px 52.5px;
+      background-color: rgb(253, 251, 237);
+    }
+    .cta{
+  width: 58px;
+  height: 7px;
+  font-family: Avenir;
+  font-size: 9px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3.33;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: #000;
+  z-index: 2000;
+  margin: 0;
+  margin-bottom: 20.5px;
+    }
+    .card_text{
+        background-color: rgb(253, 251, 237);
+        height: 90px;
+        width: 277.5px;
+        display: flex;
+        padding: 0;
+        gap: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content:unset;
+        padding-top: 30.5px;
+        border: 1px solid rgba(0, 0, 0, 0.548);
+    }
+    .btns{
+        width: 261px;
+        margin-top: 0;
+    }
+    .btn{
+        height: 11px;
+        width: 6.5px;
+        cursor: pointer;
+    }
+    .logo{
+        width: 133px;
+        height: 42px;
+        z-index: 2000;
+        transform:translateX(-160px);
+        margin: 0;
+        margin-left:39.5px;
+        margin-bottom: 23.5px;
+        
+    }
+
+}
+
+@media screen and (max-width: 426px){
+    .banner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .card{
+        width: 300px;
+        flex-direction: column;
+        background-color: rgba(255, 254, 242, 0);
+        border: 0px solid black;
+    }
+    .img_wrapper{
+        height: 444px;
+        position: relative;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .card_img{
+        width: 300px;
+        height: 444px;
+        position: absolute;
+    }
+    .card_img:nth-of-type(1){
+        opacity: 1;
+        z-index: 4;
+        object-fit: cover;
+        background-image: url(./assets/lily@2x.png);
+    }
+    .card_img:nth-of-type(2){
+        background-image: url(./assets/mens-scarf-and-briefcase@2x.png);
+    }
+    .card_img:nth-of-type(3){
+        
+        background-image: url(./assets/micro-bags@2x.jpg);
+    }
+    .card_img:nth-of-type(4){
+     background-image: url(./assets/mini-alexa@2x.png);
+    }
+    
+    .card_titles{
+        font-family: Bembo;
+        font-weight: 100;
+        text-align: center;
+        height: 52px;
+        width: 156px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        
+    }
+    h2{
+        position: absolute;
+        font-size:25px;
+        font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.16;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: #000;
+      width: 156.5px;
+      height: 52px;
+      margin: 0 52px 37px 52.5px;
+      background-color: rgb(253, 251, 237);
+    }
+    .card_title:nth-of-type(1){
+        opacity: 1;
+        z-index: 4;
+    }
+    .card_title:nth-of-type(2){
+        opacity: 0;
+        z-index: 3;
+    }
+    .card_title:nth-of-type(3){
+        opacity: 0;
+        z-index: 2;
+    }
+    .card_title:nth-of-type(4){
+        opacity: 0;
+        z-index: 1;
+    }
+    .cta{
+      justify-self: baseline;
+      cursor: pointer;
+      width: 87px;
+      height: 15px;
+      margin: 0 0 3.5px;
+      object-fit: contain;
+      font-family: Avenir;
+      font-size: 13px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.31;
+      letter-spacing: 1.3px;
+      text-align: center;
+      color: #000;
+    }
+    .card_text{
+        background-color: rgb(253, 251, 237);
+        height: 165px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+        border: 1px solid rgba(0, 0, 0, 0.548);
+    }
+    .btns{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 261px;
+        margin-top: 10px;
+    }
+    .btn{
+        height: auto;
+        width: 7px;
+        cursor: pointer;
+    }
+    .logo{
+        width: 199px;
+        height: 63px;
+        z-index: 2000;
+        align-self: center;
+        margin: 0;
+        transform: translate(0,0);
+
+        
+    }
+
+}
